@@ -1,4 +1,5 @@
-<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<html>
+<head>
    
 
 	<!-- messes up ctrl alt i ---------
@@ -14,16 +15,15 @@
 	
 	<a-scene>
 	
-	
 	  <a-assets>
-	 <video id="Lego" autoplay loop="true" src="video/SphereVideo.webm" webkit-playsinline>
+	 <video id="Lego" autoplay="" loop="true" src="video/SphereVideo.webm" webkit-playsinline="" playsinline="" controls="" crossorigin="anonymous">
 	
-	<a-asset-item id=#fridge src = "assets/fridge/scene.gltf"></a-asset-item>
+	<a-asset-item id="#fridge" src="assets/fridge/scene.gltf"></a-asset-item>
 	
-	 <img id="texture" src="img/texture.jpg" />
+	 <img id="texture" src="img/texture.png" />
 
         <audio id="blip1" src="/tyftyfftyfty.wav"></audio>
-       </a-assets>
+       </video></a-assets>
 	
 	
     <a-sky color="#ECECEC" position="0 0 0" rotation="0 0 0" scale="-1 1 1" visible="true" material="color:#ECECEC;shader:flat" geometry="primitive:sphere;radius:5000;segmentsWidth:64;segmentsHeight:20"></a-sky>
@@ -31,14 +31,15 @@
 	
 	
 	    <a-camera>
-			<a-cursor> </a-cursor>
+		<a-cursor> </a-cursor>
 		<a-camera>
-			
+		
 	
-	<a-gltf-model id= "fridge" src="#fridge" position="0 0 0" gltf-model = "#fridge" </a-gltf-model>
+	
+	<a-gltf-model id="fridge" src="#fridge" position="0 0 0" gltf-model="#fridge" <="" a-gltf-model="" rotation="0 0 0"  visible="true">
 		
 		
-    </a-camera></a-camera></a-entity>
+    </a-gltf-model></a-camera></a-camera></a-entity>
     
     <a-box color="yellow" position="45 0 -10" depth="2" height="2" width="2" class="intersectable" rotation="0 0 0" scale="1 1 1" visible="true" material="color:yellow" geometry="primitive:box;depth:2;height:2;width:2">
        <a-animation begin="click" attribute="position" from="45 0 6" to="45 0 -10" dur="3000"></a-animation>
@@ -50,7 +51,7 @@
 	<a-box material="src:images/fridge.jpg" position="11.534 5.737 14.333" depth="5" height="5" width="5" rotation="0 0 0" scale="1 2.5 1.31" visible="true" geometry="primitive:box;depth:5;height:5;width:5"></a-box><a-box material="src:images/cabinet.jpg" position="29.499 2.152 0.4" depth="5" height="5" width="5" rotation="0 0 0" scale="1.2 1.3 1.5" visible="true" geometry="primitive:box;depth:5;height:5;width:5"></a-box><a-box material="src:images/cabinet.jpg" position="31.945 6.862 0.4" depth="5" height="5" width="5" rotation="0 0 0" scale="0.21999999999999997 0.55 1.5" visible="true" geometry="primitive:box;depth:5;height:5;width:5"></a-box>
 	
 	
-	<a-box material="src:images/cabinet.jpg" position="10.611 2.143 -4.21" depth="5" height="5" width="5" rotation="0 90 0" scale="6 1 1" visible="true" geometry="primitive:box;depth:5;height:5;width:5"></a-box>
+	<a-box material="src:images/cabinet.jpg" position="10.611 2.143 -4.21" depth="5" height="5" width="5" rotation="0 90 0" scale="6 1 1" visible="true" geometry="primitive:box;depth:5;height:5;width:5"></a-box><a-box material="src:images/cabinet.jpg" position="34.766 0.747 20.038" depth="5" height="5" width="5" rotation="0 90 0" scale="3 0.08 0.4" visible="true" geometry="primitive:box;depth:5;height:5;width:5"></a-box>
 	<a-box material="src:images/cabinet.jpg" position="18.742 2.143 -17.234" depth="5" height="5" width="5" rotation="0 180 0" scale="3.06 1 1.2" visible="true" geometry="primitive:box;depth:5;height:5;width:5"></a-box>
 	<a-box material="src:images/cabinet.jpg" position="9.575 10.82 0.946" depth="5" height="5" width="5" rotation="0 90 0" scale="4.1 1.06 0.3" visible="true" geometry="primitive:box;depth:5;height:5;width:5"></a-box>
 	<a-box material="src:images/TV.png" position="57.291 10.198 -18.253" depth="5" height="5" width="5" rotation="5 0 0" scale="2.8 1.6 0.05" visible="true" geometry="primitive:box;depth:5;height:5;width:5"></a-box>
@@ -58,7 +59,12 @@
 	<a-box material="src:images/cabinet.jpg" position="18.2 10.82 -18.619" depth="5" height="5" width="5" rotation="0 180 0" scale="3.2 1.06 0.3" visible="true" geometry="primitive:box;depth:5;height:5;width:5"></a-box>
 	<a-box material="src:images/cabinet.jpg" position="9.577 10.82 -17.765" depth="5" height="5" width="5" rotation="0 90 0" scale="0.75 1.06 0.3" visible="true" geometry="primitive:box;depth:5;height:5;width:5"></a-box>
 	
-	<a-box material="src:images/cabinet.jpg" position="32.687 5.001 -24.4" rotation="0 100 0" scale="7.5 13.8 1" visible="true" geometry="primitive:box">
+	<a-box material="src:images/cabinet.jpg" position="80 6.465 -13.511" rotation="0 90 0" scale="7.5 13.8 1" visible="true" geometry="primitive:box">
+	
+		<a-animation begin="click" attribute="position" direction="normal" from="37.15 5.653 -20.414" to="32.687 5.001 -24.4" dur="2000"></a-animation>
+		<a-animation attribute="rotation" begin="click" dur="2000" to="0 100 0"></a-animation>
+	
+	</a-box><a-box material="src:images/cabinet.jpg" position="32.687 5.001 -24.4" rotation="0 100 0" scale="7.5 13.8 1" visible="true" geometry="primitive:box">
 	
 		<a-animation begin="click" attribute="position" direction="normal" from="37.15 5.653 -20.414" to="32.687 5.001 -24.4" dur="2000"></a-animation>
 		<a-animation attribute="rotation" begin="click" dur="2000" to="0 100 0"></a-animation>
@@ -69,7 +75,7 @@
 <title>Video</title>
 <meta name="description" content="Video - A-Frame" />
 <a-assets>
-<video id="Lego" autoplay loop = "true" src="video/SphereVideo.webm" width="160" height="90" autoplay="" loop="true" crossorigin="anonymous" playsinline="" webkit-playsinline="" controls=""></video>
+<video id="Lego" autoplay="" loop="true" src:"video/SphereVideo.webm" width="160" height="90" playsinline="" webkit-playsinline="" controls=""></video>
 
 </a-assets>
 
@@ -96,12 +102,12 @@
     <!-- Ceiling -->
     <a-entity static-body="" position="0 14 5" material="shader:flat;side:double;opacity:1;src:url(images/ceiling2.jpg);repeat:20 12" rotation="0 0 0" scale="1 1 1" visible="true"></a-entity>
     <!-- Floor -->
-    <a-entity static-body="" position="9.566 -0.5 9.83" material="shader:flat;side:double;opacity:1;src:url(images/floor.jpg);repeat:12 5" rotation="0 0 0" scale="0.89 1 1.15" visible="true"></a-entity><a-entity static-body="" geometry="primitive:box;depth:50;height:0.1;width:160" position="9.566 -0.775 -48.929" material="shader:flat;side:double;opacity:1;src:url(images/floor.jpg);repeat:12 5" rotation="0 0 0" scale="0.89 1 1.2" visible="true"></a-entity><a-entity static-body="" geometry="primitive:box;depth:50;height:0.1;width:160" position="9.566 -0.287 8.255" material="shader:flat;side:double;opacity:1;src:url(images/floor.jpg);repeat:12 5" rotation="0 0 0" scale="0.89 1 1.2" visible="true"></a-entity><a-entity static-body="" geometry="primitive:box;depth:50;height:0.1;width:160" position="43.744 -0.5 55.08" material="shader:flat;side:double;opacity:1;src:url(images/floor.jpg);repeat:12 5" rotation="0 0 0" scale="0.46 1 1" visible="true"></a-entity>
+    <a-entity static-body="" position="9.566 -0.5 9.83" material="shader:flat;side:double;opacity:1;src:url(images/floor.jpg);repeat:12 5" rotation="0 0 0" scale="0.89 1 1.15" visible="true"></a-entity><a-entity static-body="" position="9.566 -0.775 -48.929" material="shader:flat;side:double;opacity:1;src:url(images/floor.jpg);repeat:12 5" rotation="0 0 0" scale="0.89 1 1.2" visible="true"></a-entity><a-entity static-body="" geometry="primitive:box;depth:50;height:0.1;width:160" position="9.566 -0.287 8.255" material="shader:flat;side:double;opacity:1;src:url(images/floor.jpg);repeat:12 5" rotation="0 0 0" scale="0.89 1 4" visible="true"></a-entity><a-entity static-body="" position="43.744 -0.5 55.08" material="shader:flat;side:double;opacity:1;src:url(images/floor.jpg);repeat:12 5" rotation="0 0 0" scale="0.46 1 1" visible="true"></a-entity>
 
     <!-- Trim -->
     <a-entity geometry="primitive:box;depth:0.6;height:1;width:160" position="8.818 13.5 -19.7" rotation="0 0 0" material="shader:standard;roughness:1;src:url(images/trim.jpg);repeat:32 1" scale="0.88 1 1" visible="true"></a-entity>
     <a-entity geometry="primitive:box;depth:0.6;height:1;width:160" position="-15.642 13.5 38.156" rotation="0 0 0" material="shader:standard;roughness:1;src:url(images/trim.jpg);repeat:32 1" scale="0.58 1 1" visible="true"></a-entity>
-    <a-entity geometry="primitive:box;depth:0.6;height:1;width:50" position="79.7 13.5 5" rotation="0 90 0" material="shader:standard;roughness:1;src:url(images/trim.jpg);repeat:9 1" scale="1 1 1" visible="true"></a-entity>
+    <a-entity geometry="primitive:box;depth:0.6;height:1;width:50" position="80 13.5 5" rotation="0 90 0" material="shader:standard;roughness:1;src:url(images/trim.jpg);repeat:9 1" scale="1 1 1" visible="true"></a-entity>
     <a-entity geometry="primitive:box;depth:0.6;height:1;width:50" position="-61.363 13.5 8.744" rotation="0 90 0" material="shader:standard;roughness:1;src:url(images/trim.jpg);repeat:9 1" scale="1.15 1 1" visible="true"></a-entity>
 
     <!-- H Beams  -->
@@ -133,12 +139,12 @@
 
     <a-entity static-body="" position="60 6.25 -19" rotation="0 0 90" material="shader:standard;roughness:1;src:url(images/beam.jpg)" scale="1 1 1" visible="true"></a-entity>
     <a-entity static-body="" position="-60 6.25 29" rotation="0 0 90" material="shader:standard;roughness:1;src:url(images/beam.jpg)" scale="1 1 1" visible="true"></a-entity>
-    <a-entity static-body="" geometry="primitive:box;depth:1;height:1;width:13.5" position="79 6.25 -19" rotation="0 0 90" material="shader:standard;roughness:1;src:url(images/beam.jpg)" scale="1 1 1" visible="true"></a-entity>
+    <a-entity static-body="" position="79 6.25 -19" rotation="0 0 90" material="shader:standard;roughness:1;src:url(images/beam.jpg)" scale="1 1 1" visible="true"></a-entity>
     <a-entity static-body="" position="-79 6.25 29" rotation="0 0 90" material="shader:standard;roughness:1;src:url(images/beam.jpg)" scale="1 1 1" visible="true"></a-entity>
 
     <!-- Walls  -->
-    <a-entity static-body="" geometry="primitive:box;depth:1;height:14;width:50" position="-61.858 6.5 9.148" rotation="0 90 0" material="shader:standard;roughness:1;src:url(images/wall_new.jpg);repeat:1 1" scale="1.1600000000000001 1 1" visible="true"></a-entity><a-entity static-body="" geometry="primitive:box;depth:1;height:14;width:50" position="8.5 6.5 5.391" rotation="0 90.01166961505233 0" material="shader:standard;roughness:1;src:url(images/wall_new.jpg);repeat:1 1" scale="0.6 1 1" visible="true"></a-entity><a-entity static-body="" geometry="primitive:box;depth:1;height:14;width:50" position="8.5 3.055 -12.717" rotation="0 90 0" material="shader:standard;roughness:1;src:url(images/wall_new.jpg);repeat:1 1" scale="0.125 0.5 1" visible="true"></a-entity><a-entity static-body="" geometry="primitive:box;depth:1;height:14;width:50" position="8.5 12.463 -12.749" rotation="0 90 0" material="shader:standard;roughness:1;src:url(images/wall_new.jpg);repeat:1 1" scale="0.125 0.15000000000000002 1" visible="true"></a-entity><a-entity static-body="" geometry="primitive:box;depth:1;height:14;width:50" position="8.5 6.5 -17.586" rotation="0 90 0" material="shader:standard;roughness:1;src:url(images/wall_new.jpg);repeat:1 1" scale="0.07000000000000002 1 1" visible="true"></a-entity><a-entity static-body="" position="7 5.463 5" rotation="0 90 0" material="shader:standard;roughness:1;src:url(images/wall_new.jpg);repeat:1 1" scale="0.49 0.73 1" visible="true"></a-entity><a-entity static-body="" geometry="primitive:box;depth:1;height:14;width:50" position="30.7 6.5 58.903" rotation="0 90 0" material="shader:standard;roughness:1;src:url(images/wall_new.jpg);repeat:1 1" scale="0.85 1 1" visible="true"></a-entity><a-entity static-body="" geometry="primitive:box;depth:1;height:14;width:50" position="33.032 6.469 12.413" rotation="0 90 0" material="shader:standard;roughness:1;src:url(images/wall_new.jpg);repeat:1 1" scale="0.75 1 1" visible="true"></a-entity><a-entity static-body="" geometry="primitive:box;depth:1;height:14;width:50" position="33.06 5.717 -16.501" rotation="0 90 0" material="shader:standard;roughness:1;src:url(images/wall_new.jpg);repeat:1 1" scale="0.15 1 1" visible="true"></a-entity><a-entity static-body="" geometry="primitive:box;depth:1;height:14;width:50" position="27.134 5.717 -16.858" rotation="0 90 0" material="shader:standard;roughness:1;src:url(images/wall_new.jpg);repeat:1 1" scale="0.15 1 1" visible="true"></a-entity><a-entity static-body="" geometry="primitive:box;depth:1;height:14;width:50" position="80 6.5 55.125" rotation="0 90 0" material="shader:standard;roughness:1;src:url(images/wall_new.jpg);repeat:1 1" scale="1 1 1" visible="true"></a-entity><a-entity static-body="" geometry="primitive:box;depth:1;height:14;width:50" position="55.26 6.5 79.935" rotation="0 0 0" material="shader:standard;roughness:1;src:url(images/wall_new.jpg);repeat:1 1" scale="1 1 1" visible="true"></a-entity><a-entity static-body="" geometry="primitive:box;depth:1;height:14;width:50" position="60.431 6.5 30.613" rotation="0 0 0" material="shader:standard;roughness:1;src:url(images/wall_new.jpg);repeat:1 1" scale="0.8 1 1" visible="true"></a-entity><a-entity static-body="" geometry="primitive:box;depth:1;height:14;width:50" position="60.431 6.5 -20.324" rotation="0 0 0" material="shader:standard;roughness:1;src:url(images/wall_new.jpg);repeat:1 1" scale="0.8 1 1" visible="true"></a-entity><a-entity static-body="" position="66.828 6.5 79.935" rotation="0 0 0" material="shader:standard;roughness:1;src:url(images/wall_new.jpg);repeat:1 1" scale="1 1 1" visible="true"></a-entity><a-entity static-body="" position="28.965 6.059 55.752" rotation="0 90 0" material="shader:standard;roughness:1;src:url(images/wall_new.jpg);repeat:1 1" scale="1 1 1" visible="true"></a-entity>
-    <a-entity static-body="" geometry="primitive:box;depth:1;height:14;width:50" position="80 6.5 5" rotation="0 90 0" material="shader:standard;roughness:1;src:url(images/wall_new.jpg);repeat:1 1" scale="1 1 1" visible="true"></a-entity><a-entity static-body="" geometry="primitive:box;depth:1;height:14;width:50" position="80.305 6.5 -47.935" rotation="0 90 0" material="shader:standard;roughness:1;src:url(images/wall_new.jpg);repeat:1 1" scale="1.1 1 1" visible="true"></a-entity><a-entity static-body="" geometry="primitive:box;depth:1;height:14;width:50" position="40.918 6.5 -56.26" rotation="0 90 0" material="shader:standard;roughness:1;src:url(images/wall_new.jpg);repeat:1 1" scale="0.9 1 1" visible="true"></a-entity><a-entity static-body="" geometry="primitive:box;depth:1;height:14;width:50" position="40.918 6.5 -22.712" rotation="0 90 0" material="shader:standard;roughness:1;src:url(images/wall_new.jpg);repeat:1 1" scale="0.08 1 1" visible="true"></a-entity><a-entity static-body="" geometry="primitive:box;depth:1;height:14;width:50" position="28.549 6.5 -22.836" rotation="0 90 0" material="shader:standard;roughness:1;src:url(images/wall_new.jpg);repeat:1 1" scale="0.1 1 1" visible="true"></a-entity><a-entity static-body="" geometry="primitive:box;depth:1;height:14;width:50" position="28.549 6.5 -33.885" rotation="0 90 0" material="shader:standard;roughness:1;src:url(images/wall_new.jpg);repeat:1 1" scale="0.03 1 1" visible="true"></a-entity><a-entity static-body="" geometry="primitive:box;depth:1;height:14;width:50" position="6.574 6.5 -35.125" rotation="0 0 0" material="shader:standard;roughness:1;src:url(images/wall_new.jpg);repeat:1 1" scale="0.9 1 1" visible="true"></a-entity>
+    <a-entity static-body="" geometry="primitive:box;depth:1;height:14;width:50" position="-61.858 6.5 9.148" rotation="0 90 0" material="shader:standard;roughness:1;src:url(images/wall_new.jpg);repeat:1 1" scale="1.1600000000000001 1 1" visible="true"></a-entity><a-entity static-body="" geometry="primitive:box;depth:1;height:14;width:50" position="8.5 6.5 5.391" rotation="0 90.01166961505233 0" material="shader:standard;roughness:1;src:url(images/wall_new.jpg);repeat:1 1" scale="0.6 1 1" visible="true"></a-entity><a-entity static-body="" geometry="primitive:box;depth:1;height:14;width:50" position="8.5 3.055 -12.717" rotation="0 90 0" material="shader:standard;roughness:1;src:url(images/wall_new.jpg);repeat:1 1" scale="0.125 0.5 1" visible="true"></a-entity><a-entity static-body="" geometry="primitive:box;depth:1;height:14;width:50" position="8.5 12.463 -12.749" rotation="0 90 0" material="shader:standard;roughness:1;src:url(images/wall_new.jpg);repeat:1 1" scale="0.125 0.15000000000000002 1" visible="true"></a-entity><a-entity static-body="" geometry="primitive:box;depth:1;height:14;width:50" position="8.5 6.5 -17.586" rotation="0 90 0" material="shader:standard;roughness:1;src:url(images/wall_new.jpg);repeat:1 1" scale="0.07000000000000002 1 1" visible="true"></a-entity><a-entity static-body="" position="7 5.463 5" rotation="0 90 0" material="shader:standard;roughness:1;src:url(images/wall_new.jpg);repeat:1 1" scale="0.49 0.73 1" visible="true"></a-entity><a-entity static-body="" geometry="primitive:box;depth:1;height:14;width:50" position="30.7 6.5 58.903" rotation="0 90 0" material="shader:standard;roughness:1;src:url(images/wall_new.jpg);repeat:1 1" scale="0.85 1 1" visible="true"></a-entity><a-entity static-body="" geometry="primitive:box;depth:1;height:14;width:50" position="33.032 6.469 12.413" rotation="0 90 0" material="shader:standard;roughness:1;src:url(images/wall_new.jpg);repeat:1 1" scale="0.75 1 1" visible="true"></a-entity><a-entity static-body="" geometry="primitive:box;depth:1;height:14;width:50" position="33.06 5.717 -16.501" rotation="0 90 0" material="shader:standard;roughness:1;src:url(images/wall_new.jpg);repeat:1 1" scale="0.15 1 1" visible="true"></a-entity><a-entity static-body="" geometry="primitive:box;depth:1;height:14;width:50" position="27.134 5.717 -16.858" rotation="0 90 0" material="shader:standard;roughness:1;src:url(images/wall_new.jpg);repeat:1 1" scale="0.15 1 1" visible="true"></a-entity><a-entity static-body="" geometry="primitive:box;depth:1;height:14;width:50" position="80 6.5 55.125" rotation="0 90 0" material="shader:standard;roughness:1;src:url(images/wall_new.jpg);repeat:1 1" scale="1 1 1" visible="true"></a-entity><a-entity static-body="" geometry="primitive:box;depth:1;height:14;width:50" position="55.26 6.5 79.935" rotation="0 0 0" material="shader:standard;roughness:1;src:url(images/wall_new.jpg);repeat:1 1" scale="1 1 1" visible="true"></a-entity><a-entity static-body="" geometry="primitive:box;depth:1;height:14;width:50" position="61.093 6.5 30.613" rotation="0 0 0" material="shader:standard;roughness:1;src:url(images/wall_new.jpg);repeat:1 1" scale="0.75 1 1" visible="true"></a-entity><a-entity static-body="" geometry="primitive:box;depth:1;height:14;width:50" position="34.357 6.5 30.613" rotation="0 0 0" material="shader:standard;roughness:1;src:url(images/wall_new.jpg);repeat:1 1" scale="0.04 1 1" visible="true"></a-entity><a-entity static-body="" geometry="primitive:box;depth:1;height:14;width:50" position="60.431 6.5 -20.324" rotation="0 0 0" material="shader:standard;roughness:1;src:url(images/wall_new.jpg);repeat:1 1" scale="0.8 1 1" visible="true"></a-entity><a-entity static-body="" position="66.828 6.5 79.935" rotation="0 0 0" material="shader:standard;roughness:1;src:url(images/wall_new.jpg);repeat:1 1" scale="1 1 1" visible="true"></a-entity><a-entity static-body="" position="28.965 6.059 55.752" rotation="0 90 0" material="shader:standard;roughness:1;src:url(images/wall_new.jpg);repeat:1 1" scale="1 1 1" visible="true"></a-entity>
+    <a-entity static-body="" geometry="primitive:box;depth:1;height:14;width:50" position="80 6.5 10.361" rotation="0 90 0" material="shader:standard;roughness:1;src:url(images/wall_new.jpg);repeat:1 1" scale="0.8 1 1" visible="true"></a-entity><a-entity static-body="" geometry="primitive:box;depth:1;height:14;width:50" position="80 6.5 -18.798" rotation="0 90 0" material="shader:standard;roughness:1;src:url(images/wall_new.jpg);repeat:1 1" scale="0.07 1 1" visible="true"></a-entity><a-entity static-body="" geometry="primitive:box;depth:1;height:14;width:50" position="80 6.5 -47.935" rotation="0 90 0" material="shader:standard;roughness:1;src:url(images/wall_new.jpg);repeat:1 1" scale="1.1 1 1" visible="true"></a-entity><a-entity static-body="" geometry="primitive:box;depth:1;height:14;width:50" position="40.918 6.5 -56.26" rotation="0 90 0" material="shader:standard;roughness:1;src:url(images/wall_new.jpg);repeat:1 1" scale="0.9 1 1" visible="true"></a-entity><a-entity static-body="" geometry="primitive:box;depth:1;height:14;width:50" position="40.918 6.5 -22.712" rotation="0 90 0" material="shader:standard;roughness:1;src:url(images/wall_new.jpg);repeat:1 1" scale="0.08 1 1" visible="true"></a-entity><a-entity static-body="" geometry="primitive:box;depth:1;height:14;width:50" position="28.549 6.5 -22.836" rotation="0 90 0" material="shader:standard;roughness:1;src:url(images/wall_new.jpg);repeat:1 1" scale="0.1 1 1" visible="true"></a-entity><a-entity static-body="" geometry="primitive:box;depth:1;height:14;width:50" position="28.549 6.5 -33.885" rotation="0 90 0" material="shader:standard;roughness:1;src:url(images/wall_new.jpg);repeat:1 1" scale="0.03 1 1" visible="true"></a-entity><a-entity static-body="" geometry="primitive:box;depth:1;height:14;width:50" position="6.574 6.5 -35.125" rotation="0 0 0" material="shader:standard;roughness:1;src:url(images/wall_new.jpg);repeat:1 1" scale="0.9 1 1" visible="true"></a-entity>
     <a-entity static-body="" geometry="primitive:box;depth:1;height:14;width:160" position="-52.017 6.5 -20" rotation="0 0 0" material="shader:standard;roughness:1;src:url(images/wall_new.jpg);repeat:1 1" scale="0.128 1 1" visible="true"></a-entity><a-entity static-body="" geometry="primitive:box;depth:1;height:14;width:160" position="0.036 6.5 -20" rotation="0 0 0" material="shader:standard;roughness:1;src:url(images/wall_new.jpg);repeat:1 1" scale="0.42 1 1" visible="true"></a-entity>
     <a-entity static-body="" geometry="primitive:box;depth:1;height:14;width:160" position="-15.713 6.5 37.929" rotation="0 0 0" material="shader:standard;roughness:1;src:url(images/wall_new.jpg);repeat:1 1" scale="0.5800000000000001 1 1" visible="true"></a-entity>
 
@@ -156,10 +162,10 @@
     <a-entity position="25 4 5" rotation="-40 90 0" material="src:url(images/torch2.jpg)" scale="1 1 1" visible="true"></a-entity>
     <a-entity position="23.4 6.2 5" rotation="0 0 0" material="color:#222" scale="1 1 1" visible="true">
         <a-entity position="0 0.3 0" rotation="0 0 0" material="color:#222" scale="1 1 1" visible="true"></a-entity>
-        <a-entity position="0 0.9499999959482348 0" rotation="0 0 0" material="shader:flat;side:double;transparent:true;src:url(images/fire.png)" scale="1 1 1" visible="true">
+        <a-entity position="0 0.95 0" rotation="0 0 0" material="shader:flat;side:double;transparent:true;src:url(images/fire.png)" scale="1 1 1" visible="true">
             <a-animation attribute="position" to="0 0.95 0" easing="linear" repeat="indefinite" dur="450"></a-animation>
         </a-entity>
-        <a-entity position="0 0.949988185100414 0" rotation="0 90 0" material="shader:flat;side:double;transparent:true;src:url(images/fire.png)" scale="1 1 1" visible="true">
+        <a-entity position="0 0.9499897583015526 0" rotation="0 90 0" material="shader:flat;side:double;transparent:true;src:url(images/fire.png)" scale="1 1 1" visible="true">
             <a-animation attribute="position" to="0 0.95 0" easing="linear" repeat="indefinite" dur="500"></a-animation>
         </a-entity>
     </a-entity>
@@ -168,10 +174,10 @@
     <a-entity position="35 4 5" rotation="-40 -90 0" material="src:url(images/torch2.jpg)" scale="1 1 1" visible="true"></a-entity>
     <a-entity position="36.6 6.2 5" rotation="0 0 0" material="color:#222" scale="1 1 1" visible="true">
         <a-entity position="0 0.3 0" rotation="0 0 0" material="color:#222" scale="1 1 1" visible="true"></a-entity>
-        <a-entity position="0 0.9499999959482348 0" rotation="0 0 0" material="shader:flat;side:double;transparent:true;src:url(images/fire.png)" scale="1 1 1" visible="true">
+        <a-entity position="0 0.95 0" rotation="0 0 0" material="shader:flat;side:double;transparent:true;src:url(images/fire.png)" scale="1 1 1" visible="true">
             <a-animation attribute="position" to="0 0.95 0" easing="linear" repeat="indefinite" dur="450"></a-animation>
         </a-entity>
-        <a-entity position="0 0.949988185100414 0" rotation="0 90 0" material="shader:flat;side:double;transparent:true;src:url(images/fire.png)" scale="1 1 1" visible="true">
+        <a-entity position="0 0.9499897583015526 0" rotation="0 90 0" material="shader:flat;side:double;transparent:true;src:url(images/fire.png)" scale="1 1 1" visible="true">
             <a-animation attribute="position" to="0 0.95 0" easing="linear" repeat="indefinite" dur="500"></a-animation>
         </a-entity>
     </a-entity>
@@ -180,10 +186,10 @@
     <a-entity position="-35 4 5" rotation="-40 90 0" material="src:url(images/torch2.jpg)" scale="1 1 1" visible="true"></a-entity>
     <a-entity position="-36.6 6.2 5" rotation="0 0 0" material="color:#222" scale="1 1 1" visible="true">
         <a-entity position="0 0.3 0" rotation="0 0 0" material="color:#222" scale="1 1 1" visible="true"></a-entity>
-        <a-entity position="0 0.9499999959482348 0" rotation="0 0 0" material="shader:flat;side:double;transparent:true;src:url(images/fire.png)" scale="1 1 1" visible="true">
+        <a-entity position="0 0.95 0" rotation="0 0 0" material="shader:flat;side:double;transparent:true;src:url(images/fire.png)" scale="1 1 1" visible="true">
             <a-animation attribute="position" to="0 0.95 0" easing="linear" repeat="indefinite" dur="450"></a-animation>
         </a-entity>
-        <a-entity position="0 0.949988185100414 0" rotation="0 90 0" material="shader:flat;side:double;transparent:true;src:url(images/fire.png)" scale="1 1 1" visible="true">
+        <a-entity position="0 0.9499897583015526 0" rotation="0 90 0" material="shader:flat;side:double;transparent:true;src:url(images/fire.png)" scale="1 1 1" visible="true">
             <a-animation attribute="position" to="0 0.95 0" easing="linear" repeat="indefinite" dur="500"></a-animation>
         </a-entity>
     </a-entity>
@@ -192,10 +198,10 @@
     <a-entity position="-25 4 5" rotation="-40 -90 0" material="src:url(images/torch2.jpg)" scale="1 1 1" visible="true"></a-entity>
     <a-entity position="-23.4 6.2 5" rotation="0 0 0" material="color:#222" scale="1 1 1" visible="true">
         <a-entity position="0 0.3 0" rotation="0 0 0" material="color:#222" scale="1 1 1" visible="true"></a-entity>
-        <a-entity position="0 0.9499999959482348 0" rotation="0 0 0" material="shader:flat;side:double;transparent:true;src:url(images/fire.png)" scale="1 1 1" visible="true">
+        <a-entity position="0 0.95 0" rotation="0 0 0" material="shader:flat;side:double;transparent:true;src:url(images/fire.png)" scale="1 1 1" visible="true">
             <a-animation attribute="position" to="0 0.95 0" easing="linear" repeat="indefinite" dur="450"></a-animation>
         </a-entity>
-        <a-entity position="0 0.949988185100414 0" rotation="0 90 0" material="shader:flat;side:double;transparent:true;src:url(images/fire.png)" scale="1 1 1" visible="true">
+        <a-entity position="0 0.9499897583015526 0" rotation="0 90 0" material="shader:flat;side:double;transparent:true;src:url(images/fire.png)" scale="1 1 1" visible="true">
             <a-animation attribute="position" to="0 0.95 0" easing="linear" repeat="indefinite" dur="500"></a-animation>
         </a-entity>
     </a-entity>
@@ -332,10 +338,18 @@
         <a-entity position="-1.043 0.5 0.01" rotation="-10 90 0" material="shader:standard;roughness:1;src:url(images/mount.jpg)" scale="1 1 1" visible="true"></a-entity>
     </a-entity><a-entity geometry="primitive:box;depth:2;height:0.3;width:2" position="-5.008 2.155 -8.819" rotation="0 90 0" material="shader:standard;roughness:1;src:url(images/chair.jpg)" scale="1 1.4 1" visible="true">
         <a-entity geometry="primitive:box;depth:0.3;height:1.2;width:0.3" position="0.857 -0.87 0.857" rotation="0 0 0" material="shader:standard;roughness:1;src:url(images/mount.jpg)" scale="1 1.5 1" visible="true"></a-entity>
-        <a-entity geometry="primitive:box;depth:0.3;height:1.2;width:0.3" position="-0.851 -0.873 0.846" rotation="0 90 0" material="shader:standard;roughness:1;src:url(images/mount.jpg)" scale="1 1.5 1" visible="true"></a-entity>
+        <a-entity geometry="primitive:box;depth:0.3;height:1.2;width:0.3" position="-0.851 -0.873 0.846" rotation="0 90 0" material="shader:standard;roughness:1;src:url(images/mount.jpg)" scale="1 1.5 1" visible="true"></a-entity><a-entity geometry="primitive:box;depth:0.3;height:1.2;width:0.3" position="-21.495 -1.416 38.853" rotation="0 90 0" material="shader:standard;roughness:1;src:url(images/mount.jpg)" scale="0.5 0.5 0.5" visible="true"></a-entity><a-entity geometry="primitive:box;depth:0.3;height:1.2;width:0.3" position="-21.495 -1.416 40.698" rotation="0 90 0" material="shader:standard;roughness:1;src:url(images/mount.jpg)" scale="0.5 0.5 0.5" visible="true"></a-entity><a-entity geometry="primitive:box;depth:0.3;height:1.2;width:0.3" position="-36.258 -1.416 40.698" rotation="0 90 0" material="shader:standard;roughness:1;src:url(images/mount.jpg)" scale="0.5 0.5 0.5" visible="true"></a-entity><a-entity geometry="primitive:box;depth:0.3;height:1.2;width:0.3" position="-36.258 -1.416 38.859" rotation="0 90 0" material="shader:standard;roughness:1;src:url(images/mount.jpg)" scale="0.5 0.5 0.5" visible="true"></a-entity>
         <a-entity geometry="primitive:box;depth:0.3;height:1.2;width:0.3" position="0.87 -0.875 -0.853" rotation="0 0 0" material="shader:standard;roughness:1;src:url(images/mount.jpg)" scale="1 1.5 1" visible="true"></a-entity>
         <a-entity geometry="primitive:box;depth:0.3;height:1.2;width:0.3" position="-0.79 -0.87 -0.858" rotation="0 90 0" material="shader:standard;roughness:1;src:url(images/mount.jpg)" scale="1 1.5 1" visible="true"></a-entity>
         <a-entity geometry="primitive:box;depth:1;height:0.3;width:2" position="-1.082 1.285 -0.014" rotation="80 90 0" material="shader:standard;roughness:1;src:url(images/chair.jpg)" scale="1 1 3" visible="true"></a-entity>
+        <a-entity position="-0.9 0.5 0.8" rotation="-10 90 0" material="shader:standard;roughness:1;src:url(images/mount.jpg)" scale="1 1 1" visible="true"></a-entity>
+        <a-entity position="-1.043 0.5 0.01" rotation="-10 90 0" material="shader:standard;roughness:1;src:url(images/mount.jpg)" scale="1 1 1" visible="true"></a-entity>
+    </a-entity><a-entity position="60.949 1.7 21.317" rotation="0 90 0" material="shader:standard;roughness:1;src:url(images/chair.jpg)" scale="1.5 1 5" visible="true">
+        <a-entity position="0.857 -0.906 0.958" rotation="0 0 0" material="shader:standard;roughness:1;src:url(images/mount.jpg)" scale="1 1.5 0.2" visible="true"></a-entity>
+        <a-entity position="-0.851 -0.873 0.846" rotation="0 90 0" material="shader:standard;roughness:1;src:url(images/mount.jpg)" scale="1 1.5 1" visible="true"></a-entity>
+        <a-entity position="0.87 -0.875 -0.853" rotation="0 0 0" material="shader:standard;roughness:1;src:url(images/mount.jpg)" scale="1 1.5 1" visible="true"></a-entity>
+        <a-entity position="-0.79 -0.87 -0.858" rotation="0 90 0" material="shader:standard;roughness:1;src:url(images/mount.jpg)" scale="1 1.5 1" visible="true"></a-entity>
+        <a-entity position="-0.842 1.285 -0.014" rotation="90 90 0" material="shader:standard;roughness:1;src:url(images/chair.jpg)" scale="1 1 3" visible="true"></a-entity>
         <a-entity position="-0.9 0.5 0.8" rotation="-10 90 0" material="shader:standard;roughness:1;src:url(images/mount.jpg)" scale="1 1 1" visible="true"></a-entity>
         <a-entity position="-1.043 0.5 0.01" rotation="-10 90 0" material="shader:standard;roughness:1;src:url(images/mount.jpg)" scale="1 1 1" visible="true"></a-entity>
     </a-entity><a-entity geometry="primitive:box;depth:2;height:0.3;width:2" position="-5.008 2.155 -15.801" rotation="0 270 0" material="shader:standard;roughness:1;src:url(images/chair.jpg)" scale="1 1.4 1" visible="true">
@@ -417,21 +431,21 @@
             <a-entity position="0 0.35 0" rotation="-4.640958140559668 -0.2291831180523293 -6.474423084978302" material="shader:flat;side:double;transparent:true;src:url(images/fire.png)" scale="1 1 1" visible="true">
                 <a-animation attribute="position" to="0 0.35 0" easing="linear" repeat="indefinite" dur="350"></a-animation>
             </a-entity>
-            <a-entity position="0 0.3499999967585879 0" rotation="0 90 0" material="shader:flat;side:double;transparent:true;src:url(images/fire.png)" scale="1 1 1" visible="true">
+            <a-entity position="0 0.35 0" rotation="0 90 0" material="shader:flat;side:double;transparent:true;src:url(images/fire.png)" scale="1 1 1" visible="true">
                 <a-animation attribute="position" to="0 0.35 0" easing="linear" repeat="indefinite" dur="450"></a-animation>
             </a-entity>
         </a-entity><a-entity geometry="primitive:cylinder;radius:0.09;height:0.42" position="-22.166 -0.68 13.085" rotation="0 0 0" material="side:double;src:url(images/candle.jpg);repeat:2 1" scale="1 6 1" visible="true">
             <a-entity position="0 0.35 0" rotation="0 0 0" material="shader:flat;side:double;transparent:true;src:url(images/fire.png)" scale="1 1 1" visible="true">
                 <a-animation attribute="position" to="0 0.35 0" easing="linear" repeat="indefinite" dur="350"></a-animation>
             </a-entity>
-            <a-entity position="0 0.3499999967585879 0" rotation="0 90 0" material="shader:flat;side:double;transparent:true;src:url(images/fire.png)" scale="1 1 1" visible="true">
+            <a-entity position="0 0.35 0" rotation="0 90 0" material="shader:flat;side:double;transparent:true;src:url(images/fire.png)" scale="1 1 1" visible="true">
                 <a-animation attribute="position" to="0 0.35 0" easing="linear" repeat="indefinite" dur="450"></a-animation>
             </a-entity>
         </a-entity><a-entity geometry="primitive:cylinder;radius:0.09;height:0.42" position="-22.166 -0.68 10.554" rotation="0 0 0" material="side:double;src:url(images/candle.jpg);repeat:2 1" scale="1 6 1" visible="true">
             <a-entity position="0 0.35 0" rotation="0 0 0" material="shader:flat;side:double;transparent:true;src:url(images/fire.png)" scale="1 1 1" visible="true">
                 <a-animation attribute="position" to="0 0.35 0" easing="linear" repeat="indefinite" dur="350"></a-animation>
             </a-entity>
-            <a-entity position="0 0.3499999967585879 0" rotation="0 90 0" material="shader:flat;side:double;transparent:true;src:url(images/fire.png)" scale="1 1 1" visible="true">
+            <a-entity position="0 0.35 0" rotation="0 90 0" material="shader:flat;side:double;transparent:true;src:url(images/fire.png)" scale="1 1 1" visible="true">
                 <a-animation attribute="position" to="0 0.35 0" easing="linear" repeat="indefinite" dur="450"></a-animation>
             </a-entity>
 
@@ -439,49 +453,49 @@
 		
 		<a-entity id="handle" position="0.224 0.433 0" rotation="0 0 0" scale="1 1 1" visible="true">
 				
-				<a-entity geometry="primitive:cylinder;radius:0.09;height:0.42" position="-13.861 1.076 11.15" rotation="0 0 0" material="side:double;src:url(images/TV.jpg);repeat:2 1" scale="1 6 1" visible="true"></a-entity>
+				<a-entity geometry="primitive:cylinder;radius:0.09;height:0.42" position="-13.861 1.076 11.15" rotation="0 0 0" material="side:double;src:url(images/TV.png);repeat:2 1" scale="1 6 1" visible="true"></a-entity>
            
-		   <a-entity geometry="primitive:cylinder;radius:0.09;height:0.42" position="-13.861 2.854 10.85" rotation="-30 0 0" material="side:double;src:url(images/TV.jpg);repeat:2 1" scale="1 3 1" visible="true"></a-entity>
+		   <a-entity geometry="primitive:cylinder;radius:0.09;height:0.42" position="-13.861 2.854 10.85" rotation="-30 0 0" material="side:double;src:url(images/TV.png);repeat:2 1" scale="1 3 1" visible="true"></a-entity>
 		   
-		    <a-entity geometry="primitive:cylinder;radius:0.09;height:0.42" position="-13.861 -0.65 10.85" rotation="30 0 0" material="side:double;src:url(images/TV.jpg);repeat:2 1" scale="1 3 1" visible="true"></a-entity>
+		    <a-entity geometry="primitive:cylinder;radius:0.09;height:0.42" position="-13.861 -0.65 10.85" rotation="30 0 0" material="side:double;src:url(images/TV.png);repeat:2 1" scale="1 3 1" visible="true"></a-entity>
 		   
 		   </a-entity><a-entity id="handle-2" position="0.941 0.433 0" rotation="0 0 0" scale="1 1 1" visible="true">
 				
-				<a-entity geometry="primitive:cylinder;radius:0.09;height:0.42" position="-13.861 1.076 11.151" rotation="0 0 0" material="side:double;src:url(images/TV.jpg);repeat:2 1" scale="1 6 1" visible="true"></a-entity><a-entity geometry="primitive:cylinder;radius:0.09;height:0.42" position="-14.227 0.951 10.885" rotation="0 0 0" material="side:double;src:url(images/TV.jpg);repeat:2 1" scale="0.2 16.4 0.2" visible="true"></a-entity>
+				<a-entity geometry="primitive:cylinder;radius:0.09;height:0.42" position="-13.861 1.076 11.151" rotation="0 0 0" material="side:double;src:url(images/TV.png);repeat:2 1" scale="1 6 1" visible="true"></a-entity><a-entity geometry="primitive:cylinder;radius:0.09;height:0.42" position="-14.227 0.951 10.885" rotation="0 0 0" material="side:double;src:url(images/TV.png);repeat:2 1" scale="0.2 16.4 0.2" visible="true"></a-entity>
            
-		   <a-entity geometry="primitive:cylinder;radius:0.09;height:0.42" position="-13.861 2.854 10.856" rotation="-30 0 0" material="side:double;src:url(images/TV.jpg);repeat:2 1" scale="1 3 1" visible="true"></a-entity>
+		   <a-entity geometry="primitive:cylinder;radius:0.09;height:0.42" position="-13.861 2.854 10.856" rotation="-30 0 0" material="side:double;src:url(images/TV.png);repeat:2 1" scale="1 3 1" visible="true"></a-entity>
 		   
-		    <a-entity geometry="primitive:cylinder;radius:0.09;height:0.42" position="-13.861 -0.65 10.85" rotation="30 0 0" material="side:double;src:url(images/TV.jpg);repeat:2 1" scale="1 3 1" visible="true"></a-entity>
+		    <a-entity geometry="primitive:cylinder;radius:0.09;height:0.42" position="-13.861 -0.65 10.85" rotation="30 0 0" material="side:double;src:url(images/TV.png);repeat:2 1" scale="1 3 1" visible="true"></a-entity>
 		   
 		   </a-entity>
-            <a-entity position="0 0.3499999967585879 0" rotation="0 90 0" material="shader:flat;side:double;transparent:true;src:url(images/fire.png)" scale="1 1 1" visible="true">
+            <a-entity position="0 0.35 0" rotation="0 90 0" material="shader:flat;side:double;transparent:true;src:url(images/fire.png)" scale="1 1 1" visible="true">
                 <a-animation attribute="position" to="0 0.35 0" easing="linear" repeat="indefinite" dur="450"></a-animation>
             </a-entity>
         </a-entity><a-entity geometry="primitive:cylinder;radius:0.09;height:0.42" position="-13.861 -0.506 11.065" rotation="30 0 0" material="side:double;src:url(images/candle.jpg);repeat:2 1" scale="1 2 0.64" visible="true">
             <a-entity position="0 0.35 0" rotation="0 0 0" material="shader:flat;side:double;transparent:true;src:url(images/fire.png)" scale="1 1 1" visible="true">
                 <a-animation attribute="position" to="0 0.35 0" easing="linear" repeat="indefinite" dur="350"></a-animation>
             </a-entity>
-            <a-entity position="0 0.34999999583266067 0" rotation="0 90 0" material="shader:flat;side:double;transparent:true;src:url(images/fire.png)" scale="1 1 1" visible="true">
+            <a-entity position="0 0.35 0" rotation="0 90 0" material="shader:flat;side:double;transparent:true;src:url(images/fire.png)" scale="1 1 1" visible="true">
                 <a-animation attribute="position" to="0 0.35 0" easing="linear" repeat="indefinite" dur="450"></a-animation>
             </a-entity>
         </a-entity><a-entity geometry="primitive:cylinder;radius:0.09;height:0.42" position="-20.667 -0.68 11.869" rotation="0 0 0" material="side:double;src:url(images/candle.jpg);repeat:2 1" scale="1 6 1" visible="true">
             <a-entity position="0 0.35 0" rotation="0 0 0" material="shader:flat;side:double;transparent:true;src:url(images/fire.png)" scale="1 1 1" visible="true">
                 <a-animation attribute="position" to="0 0.35 0" easing="linear" repeat="indefinite" dur="350"></a-animation>
             </a-entity>
-            <a-entity position="0 0.3499999967585879 0" rotation="0 90 0" material="shader:flat;side:double;transparent:true;src:url(images/fire.png)" scale="1 1 1" visible="true">
+            <a-entity position="0 0.35 0" rotation="0 90 0" material="shader:flat;side:double;transparent:true;src:url(images/fire.png)" scale="1 1 1" visible="true">
                 <a-animation attribute="position" to="0 0.35 0" easing="linear" repeat="indefinite" dur="450"></a-animation>
             </a-entity>
         </a-entity><a-entity geometry="primitive:cylinder;radius:0.09;height:0.42" position="-23.936 -0.68 11.869" rotation="0 0 0" material="side:double;src:url(images/candle.jpg);repeat:2 1" scale="1 6 1" visible="true">
             <a-entity position="0 0.35 0" rotation="0 0 0" material="shader:flat;side:double;transparent:true;src:url(images/fire.png)" scale="1 1 1" visible="true">
                 <a-animation attribute="position" to="0 0.35 0" easing="linear" repeat="indefinite" dur="350"></a-animation>
             </a-entity>
-            <a-entity position="0 0.3499999967585879 0" rotation="0 90 0" material="shader:flat;side:double;transparent:true;src:url(images/fire.png)" scale="1 1 1" visible="true">
+            <a-entity position="0 0.35 0" rotation="0 90 0" material="shader:flat;side:double;transparent:true;src:url(images/fire.png)" scale="1 1 1" visible="true">
                 <a-animation attribute="position" to="0 0.35 0" easing="linear" repeat="indefinite" dur="450"></a-animation>
             </a-entity>
         </a-entity>
 
         <a-entity geometry="primitive:cylinder;radius:0.09;height:0.42" position="0 0.47 0" material="side:double;src:url(images/candle.jpg);repeat:2 1" rotation="0 0 0" scale="1 1 1" visible="true">
-            <a-entity geometry="primitive:plane;height:0.2;width:0.1" position="0 0.3499998326521467 0" rotation="0 0 0" material="shader:flat;side:double;transparent:true;src:url(images/fire.png)" scale="1 1 1" visible="true">
+            <a-entity geometry="primitive:plane;height:0.2;width:0.1" position="0 0.34999989958682537 0" rotation="0 0 0" material="shader:flat;side:double;transparent:true;src:url(images/fire.png)" scale="1 1 1" visible="true">
                 <a-animation attribute="position" to="0 0.35 0" easing="linear" repeat="indefinite" dur="375"></a-animation>
             </a-entity>
             <a-entity geometry="primitive:plane;height:0.2;width:0.1" position="0 0.35 0" rotation="0 90 0" material="shader:flat;side:double;transparent:true;src:url(images/fire.png)" scale="1 1 1" visible="true">
@@ -490,18 +504,15 @@
         </a-entity>
 
         <a-entity position="-1.723 3.181 -1.073" rotation="-1.4896902673401404 2.8647889756541165 90.87110630774856" material="side:double;src:url(images/candle.jpg);repeat:2 1" scale="1 0.6599999999999999 1" visible="true">
-            <a-entity position="0 0.3499999999510109 0" rotation="0 0 0" material="shader:flat;side:double;transparent:true;src:url(images/fire.png)" scale="1 1 1" visible="true">
+            <a-entity position="0 0.3499999999979554 0" rotation="0 0 0" material="shader:flat;side:double;transparent:true;src:url(images/fire.png)" scale="1 1 1" visible="true">
                 <a-animation attribute="position" to="0 0.35 0" easing="linear" repeat="indefinite" dur="400"></a-animation>
             </a-entity>
-            <a-entity position="0 0.34999054808033125 0" rotation="0 90 0" scale="1 1 1" visible="true">
+            <a-entity position="0 0.3499918066412421 0" rotation="0 90 0" scale="1 1 1" visible="true">
                 <a-animation attribute="position" to="0 0.35 0" easing="linear" repeat="indefinite" dur="500"></a-animation>
             </a-entity>
         </a-entity>
 	 </a-entity>
-  </a-scene>
-
-
-
-
+   </a-scene>
+	
 </body>
 </html>
