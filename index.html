@@ -2,10 +2,9 @@
 
 <head>
 
-<script src="http://cdn.rawgit.com/donmccurdy/aframe-extras/v3.13.1/dist/aframe-extras.min.js"></script>
 
 
-<script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
+<script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script>
 
 <script src="js/aframe-text-geometry-component.min.js"></script>
 
@@ -199,10 +198,9 @@ roughness: 1; src: url(images/TV.png)" light="type:ambient; intensity:0.8; color
 	<a-entity position="29.969 7 -14.194" rotation="0 0 0" material="shader:standard;roughness:1;src:url(images/brick3.jpg);repeat:1 2" scale="1 1 0.253" visible="true"></a-entity>
 
 
-    <!-- Ceiling -->
-    <a-entity static-body="" position="0 14 5" material="shader:flat;side:double;opacity:1;src:url(images/ceiling2.jpg);repeat:20 12" rotation="0 0 0" scale="1 1 1" visible="true"></a-entity>
-    <!-- Floor -->
-    <a-entity static-body="" position="9.566 -0.5 9.83" material="shader:flat;side:double;opacity:1;src:url(images/floor.jpg);repeat:12 5" rotation="0 0 0" scale="0.89 1 1.15" visible="true"></a-entity><a-entity static-body="" position="9.566 -0.775 -48.929" material="shader:flat;side:double;opacity:1;src:url(images/floor.jpg);repeat:12 5" rotation="0 0 0" scale="0.89 1 1.2" visible="true"></a-entity><a-entity static-body="" geometry="primitive:box;depth:50;height:0.1;width:160" position="9.566 -0.287 8.255" material="shader:flat;side:double;opacity:1;src:url(images/floor.jpg);repeat:12 5" rotation="0 0 0" scale="0.89 1 4" visible="true"></a-entity><a-entity static-body="" position="43.744 -0.5 55.08" material="shader:flat;side:double;opacity:1;src:url(images/floor.jpg);repeat:12 5" rotation="0 0 0" scale="0.46 1 1" visible="true"></a-entity>
+       <!-- Floor -->
+    <a-entity static-body="" position="9.566 -0.5 9.83" material="shader:flat;side:double;opacity:1;src:url(images/floor.jpg);repeat:12 5" rotation="0 0 0" scale="0.89 1 1.15" visible="true"></a-entity><a-entity static-body="" position="9.566 -0.775 -48.929" material="shader:flat;side:double;opacity:1;src:url(images/floor.jpg);repeat:12 5" rotation="0 0 0" scale="0.89 1 1.2" visible="true"></a-entity>
+	<a-entity static-body="" geometry="primitive:box;depth:50;height:0.1;width:160" position="9.566 -0.287 8.255" material="shader:flat;side:double;opacity:1;src:url(images/floor.jpg);repeat:12 5" rotation="0 0 0" scale="0.89 1 4" visible="true"></a-entity><a-entity static-body="" position="43.744 -0.5 55.08" material="shader:flat;side:double;opacity:1;src:url(images/floor.jpg);repeat:12 5" rotation="0 0 0" scale="0.46 1 1" visible="true"></a-entity>
 
     <!-- Walls  -->
     <a-entity static-body="" geometry="primitive:box;depth:1;height:14;width:50" position="-61.858 13.32 9.148" rotation="0 90 0" material="shader:standard;roughness:1;src:url(images/modern_wall.jpg);repeat:1 1" scale="1.1600000000000001 2 1" visible="true"></a-entity>
@@ -238,40 +236,6 @@ roughness: 1; src: url(images/TV.png)" light="type:ambient; intensity:0.8; color
     <a-entity static-body="" position="-30 14.6 5" material="src:url(images/brick3.jpg);repeat:2 1" rotation="0 0 0" scale="1 1 1" visible="true"></a-entity>
  
   
-	
-    <a-entity geometry="primitive:plane;height:8.8;width:6.2" position="-14.5 4.5 -18.98" rotation="0 0 0" material="shader:flat;transparent:true;src:url(images/Audio-Recorder.png)" scale="1 1 1" visible="true"></a-entity>
-    <a-entity geometry="primitive:box;depth:1;height:11;width:8" position="-14.5 4.2 -19.5" rotation="0 0 0" material="shader:standard;roughness:1;src:url(images/mount.jpg);repeat:1 2" scale="1 1 1" visible="true"></a-entity>
-
-    <a-entity position="25.5 4.5 -18.98" rotation="0 0 0" material="shader:flat;transparent:true;src:url(images/Spy-Pen.png)" scale="1 1 1" visible="true"></a-entity>
-    <a-entity position="25.5 14.337 -19.5" rotation="0 0 0" material="shader:standard;roughness:1;src:url(images/mount.jpg);repeat:1 2" scale="1 1 1" visible="true"></a-entity>
-
-    <a-entity position="-25.5 4.5 -18.98" rotation="0 0 0" material="shader:flat;transparent:true;src:url(images/Key-Remote.png)" scale="1 1 1" visible="true"></a-entity>
-    <a-entity position="-25.5 4.2 -19.5" rotation="0 0 0" material="shader:standard;roughness:1;src:url(images/mount.jpg);repeat:1 2" scale="1 1 1" visible="true"></a-entity>
-
-    <a-entity position="34.5 4.5 -18.98" rotation="0 0 0" material="shader:flat;transparent:true;src:url(images/Key-Remote-HD.png)" scale="1 1 1" visible="true"></a-entity>
-    <a-entity position="31.168 6.595 -18.135" rotation="-0.2400000000000001 0 0" material="shader:standard;roughness:1;src:url(images/mount.jpg);repeat:1 2" scale="1 1.27 1" visible="true"></a-entity>
-
-    <a-entity position="-34.5 4.5 -18.98" rotation="0 0 0" material="shader:flat;transparent:true;src:url(images/Wrist-Watch.png)" scale="1 1 1" visible="true"></a-entity>
-    <a-entity position="-34.5 4.2 -19.5" rotation="0 0 0" material="shader:standard;roughness:1;src:url(images/mount.jpg);repeat:1 2" scale="1 1 1" visible="true"></a-entity>
-
-    <a-entity position="45.5 4.5 -18.98" rotation="0 0 0" material="shader:flat;transparent:true;src:url(images/Sunglasses.png)" scale="1 1 1" visible="true"></a-entity>
-    <a-entity position="45.5 4.2 -19.5" rotation="0 0 0" material="shader:standard;roughness:1;src:url(images/mount.jpg);repeat:1 2" scale="1 1 1" visible="true"></a-entity>
-
-    <a-entity position="-45.5 4.5 -18.98" rotation="0 0 0" material="shader:flat;transparent:true;src:url(images/Eyeglasses.png)" scale="1 1 1" visible="true"></a-entity>
-    <a-entity position="-45.5 4.2 -19.5" rotation="0 0 0" material="shader:standard;roughness:1;src:url(images/mount.jpg);repeat:1 2" scale="1 1 1" visible="true"></a-entity>
-
-    <a-entity position="54.5 4.5 -18.98" rotation="0 0 0" material="shader:flat;transparent:true;src:url(images/Shirt-Button.png)" scale="1 1 1" visible="true"></a-entity>
-    <a-entity position="54.5 4.2 -19.5" rotation="0 0 0" material="shader:standard;roughness:1;src:url(images/mount.jpg);repeat:1 2" scale="1 1 1" visible="true"></a-entity>
-
-    <a-entity position="-54.5 4.5 -18.98" rotation="0 0 0" material="shader:flat;transparent:true;src:url(images/Microphone.png)" scale="1 1 1" visible="true"></a-entity>
-    <a-entity position="-53.494 -1.989 -45.842" rotation="0 0 0" material="shader:standard;roughness:1;src:url(images/mount.jpg);repeat:1 2" scale="1 1 1" visible="true"></a-entity>
-
-    <a-entity position="65.5 4.5 -18.98" rotation="0 0 0" material="shader:flat;transparent:true;src:url(images/Smoke-Detector.png)" scale="1 1 1" visible="true"></a-entity>
-    <a-entity position="65.5 4.2 -19.5" rotation="0 0 0" material="shader:standard;roughness:1;src:url(images/mount.jpg);repeat:1 2" scale="1 1 1" visible="true"></a-entity>
-
-    <a-entity position="-65.5 4.5 -18.98" rotation="0 0 0" material="shader:flat;transparent:true;src:url(images/Jacket-Hook.png)" scale="1 1 1" visible="true"></a-entity>
-    <a-entity position="-65.5 4.2 -19.5" rotation="0 0 0" material="shader:standard;roughness:1;src:url(images/mount.jpg);repeat:1 2" scale="1 1 1" visible="true"></a-entity>
-
     <!-- Chair -->
     <a-entity position="50.737 2.948 7" rotation="0 100 0" material="shader:standard;roughness:1;src:url(images/mount.jpg)" scale="1 1 1" visible="true">
         <a-entity position="0.857 -0.87 0.857" rotation="0 0 0" material="shader:standard;roughness:1;src:url(images/mount.jpg)" scale="1 1.5 1" visible="true"></a-entity>
