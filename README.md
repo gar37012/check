@@ -18,9 +18,10 @@ https://gar37012.github.io/VR-project-1/
         Eddie Garcia
 ## Key features
 
-###Living Room
+### Living Room
 
 The living room has different features, the most noticeable ones are the 3D models as you can see below. In the screen shot you can see a dog, cat, couch, and statue that shows the many possibilities with Virtual Reality. There is a mix of GLTF and OBJ models that is interesting how html and Aframe allows you to do that.
+
  
 
 Another feature that I added was a light switch. This was a difficult feature for me to add at first. I like that on a click of a mouse the user can change the lighting. In my picture the lighting is not complete dark, however you can change the light intensity based on user preference. 
