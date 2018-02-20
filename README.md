@@ -1,22 +1,25 @@
-CS 4331-002 – Virtual Reality Project 1
-Due: February 20, 2018
-Video demonstration link
-Project link
+# CS 4331-002 - Virtual Reality Project 1
+## Due: February 20, 2018
+## Video demonstration link
+## Project link
 https://gar37012.github.io/VR-project-1/
-Report
-What I learned
+
+## Report
+### What I learned
 •	How to use google cardboard
 •	The basics of Aframe and HTML
 •	Add, commit, and push to GitHub
 •	Where the link to my GitHub account is for each repositories
- General issues
+### General issues
 •	Iphone 6 devices do not work well when testing virtual reality scene on google cardboard
 •	Downloading models such as .obj and .gtlf can have good and bad models 
 •	Low frame rate depending on models/ how much memory taken up
-Contributors	
+### Contributors	
         Eddie Garcia
-Key features
-Living Room
+## Key features
+
+###Living Room
+
 The living room has different features, the most noticeable ones are the 3D models as you can see below. In the screen shot you can see a dog, cat, couch, and statue that shows the many possibilities with Virtual Reality. There is a mix of GLTF and OBJ models that is interesting how html and Aframe allows you to do that.
  
 
